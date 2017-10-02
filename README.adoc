@@ -1,0 +1,31 @@
+= Cups4J
+
+== Description
+
+Cups4J is a Java library project that aims to give Java developers an easy interface to communicate with CUPS to query printers, print documents, monitor print jobs and much more.
+
+As CUPS has a bunch of features that can be useful within Java applications, you can think of applications that
+
+act as print servers, print and monitor jobs and notify applications about changes in print job status
+create, modify and delete printers or printer classes
+show all features of printers to tweak your print job configuration
+anything else supported by CUPS
+Currently this library has the following features:
+
+get printers objects from a CUPS server that can be used to print and monitor jobs
+get the default printer from a CUPS server
+print documents
+get status for a print job
+query jobs for a printer (you will get some of the supported attributes for all jobs that have been sent to this printer and are still accessible)
+hold, release, cancel and move print jobs
+Cups4J has a focus on CUPS which means it will also support extensions of IPP provided by CUPS . As a consequence it is likely that this library will not work perfectly with other IPP implementations. At least some features might not be supported.
+
+At the moment of this writing, this code is far away from being complete. So be prepared that things will change in future. New features will be implemented, but also the whole design might change.
+
+The current implementation is based on a partial IPP implementation of Sarah Windler Burri. She provides a set of Java classes that do all the low level IPP stuff and show how this code can be used to print files and do other things with IPP. Many Thanks to Sarah for publishing her code.
+
+== Current site
+http://www.cups4j.org/
+
+== API Docs
+http://cups4j.org/api/docs/api/
