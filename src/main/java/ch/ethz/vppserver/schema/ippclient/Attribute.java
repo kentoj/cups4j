@@ -19,109 +19,104 @@ import java.util.List;
 /**
  * <p>
  * Java class for anonymous complex type.
- * 
+ * <p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
+ * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}attribute-value" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}attribute-value" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "attributeValue" })
+@XmlType(name = "", propOrder = {"attributeValue"})
 @XmlRootElement(name = "attribute")
 public class Attribute {
 
-  @XmlElement(name = "attribute-value")
-  protected List<AttributeValue> attributeValue;
-  @XmlAttribute(required = true)
-  protected String name;
-  @XmlAttribute
-  protected String description;
+    @XmlElement(name = "attribute-value")
+    protected List<AttributeValue> attributeValue;
+    @XmlAttribute(required = true)
+    protected String name;
+    @XmlAttribute
+    protected String description;
 
-  /**
-   * Gets the value of the attributeValue property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot.
-   * Therefore any modification you make to the returned list will be present
-   * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
-   * for the attributeValue property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getAttributeValue().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list
-   * {@link AttributeValue }
-   * 
-   * 
-   */
-  public List<AttributeValue> getAttributeValue() {
-    if (attributeValue == null) {
-      attributeValue = new ArrayList<AttributeValue>();
+
+    /**
+     * Gets the value of the attributeValue property.
+     * <p>
+     * <p>
+     * This accessor method returns a reference to the live list, not a snapshot.
+     * Therefore any modification you make to the returned list will be present
+     * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
+     * for the attributeValue property.
+     * <p>
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <p>
+     * <pre>
+     * getAttributeValue().add(newItem);
+     * </pre>
+     * <p>
+     * <p>
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link AttributeValue }
+     */
+    public List<AttributeValue> getAttributeValue() {
+        if (attributeValue == null) {
+            attributeValue = new ArrayList<AttributeValue>();
+        }
+        return this.attributeValue;
     }
-    return this.attributeValue;
-  }
 
-  /**
-   * Gets the value of the name property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getName() {
-    return name;
-  }
 
-  /**
-   * Sets the value of the name property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setName(String value) {
-    this.name = value;
-  }
+    /**
+     * Gets the value of the name property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getName() {
+        return name;
+    }
 
-  /**
-   * Gets the value of the description property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDescription() {
-    return description;
-  }
 
-  /**
-   * Sets the value of the description property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setDescription(String value) {
-    this.description = value;
-  }
+    /**
+     * Sets the value of the name property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setName(String value) {
+        this.name = value;
+    }
+
+
+    /**
+     * Gets the value of the description property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getDescription() {
+        return description;
+    }
+
+
+    /**
+     * Sets the value of the description property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setDescription(String value) {
+        this.description = value;
+    }
 
 }

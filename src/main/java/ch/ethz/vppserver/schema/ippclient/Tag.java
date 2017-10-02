@@ -16,122 +16,116 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>
  * Java class for anonymous complex type.
- * 
+ * <p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
+ * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="max" type="{http://www.w3.org/2001/XMLSchema}short" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;attribute name="value" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="max" type="{http://www.w3.org/2001/XMLSchema}short" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 @XmlRootElement(name = "tag")
 public class Tag {
 
-  @XmlAttribute(required = true)
-  protected String value;
-  @XmlAttribute(required = true)
-  protected String name;
-  @XmlAttribute
-  protected String description;
-  @XmlAttribute
-  protected Short max;
+    @XmlAttribute(required = true)
+    protected String value;
+    @XmlAttribute(required = true)
+    protected String name;
+    @XmlAttribute
+    protected String description;
+    @XmlAttribute
+    protected Short max;
 
-  /**
-   * Gets the value of the value property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getValue() {
-    return value;
-  }
 
-  /**
-   * Sets the value of the value property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setValue(String value) {
-    this.value = value;
-  }
+    /**
+     * Gets the value of the value property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getValue() {
+        return value;
+    }
 
-  /**
-   * Gets the value of the name property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getName() {
-    return name;
-  }
 
-  /**
-   * Sets the value of the name property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setName(String value) {
-    this.name = value;
-  }
+    /**
+     * Sets the value of the value property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setValue(String value) {
+        this.value = value;
+    }
 
-  /**
-   * Gets the value of the description property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDescription() {
-    return description;
-  }
 
-  /**
-   * Sets the value of the description property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setDescription(String value) {
-    this.description = value;
-  }
+    /**
+     * Gets the value of the name property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getName() {
+        return name;
+    }
 
-  /**
-   * Gets the value of the max property.
-   * 
-   * @return possible object is {@link Short }
-   * 
-   */
-  public Short getMax() {
-    return max;
-  }
 
-  /**
-   * Sets the value of the max property.
-   * 
-   * @param value
-   *          allowed object is {@link Short }
-   * 
-   */
-  public void setMax(Short value) {
-    this.max = value;
-  }
+    /**
+     * Sets the value of the name property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setName(String value) {
+        this.name = value;
+    }
+
+
+    /**
+     * Gets the value of the description property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getDescription() {
+        return description;
+    }
+
+
+    /**
+     * Sets the value of the description property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setDescription(String value) {
+        this.description = value;
+    }
+
+
+    /**
+     * Gets the value of the max property.
+     *
+     * @return possible object is {@link Short }
+     */
+    public Short getMax() {
+        return max;
+    }
+
+
+    /**
+     * Sets the value of the max property.
+     *
+     * @param value allowed object is {@link Short }
+     */
+    public void setMax(Short value) {
+        this.max = value;
+    }
 
 }

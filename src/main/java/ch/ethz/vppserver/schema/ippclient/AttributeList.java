@@ -19,85 +19,81 @@ import java.util.List;
 /**
  * <p>
  * Java class for anonymous complex type.
- * 
+ * <p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
+ * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}attribute-group" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}attribute-group" maxOccurs="unbounded"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "attributeGroup" })
+@XmlType(name = "", propOrder = {"attributeGroup"})
 @XmlRootElement(name = "attribute-list")
 public class AttributeList {
 
-  @XmlElement(name = "attribute-group", required = true)
-  protected List<AttributeGroup> attributeGroup;
-  @XmlAttribute
-  protected String description;
+    @XmlElement(name = "attribute-group", required = true)
+    protected List<AttributeGroup> attributeGroup;
+    @XmlAttribute
+    protected String description;
 
-  /**
-   * Gets the value of the attributeGroup property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot.
-   * Therefore any modification you make to the returned list will be present
-   * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
-   * for the attributeGroup property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getAttributeGroup().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list
-   * {@link AttributeGroup }
-   * 
-   * 
-   */
-  public List<AttributeGroup> getAttributeGroup() {
-    if (attributeGroup == null) {
-      attributeGroup = new ArrayList<AttributeGroup>();
+
+    /**
+     * Gets the value of the attributeGroup property.
+     * <p>
+     * <p>
+     * This accessor method returns a reference to the live list, not a snapshot.
+     * Therefore any modification you make to the returned list will be present
+     * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
+     * for the attributeGroup property.
+     * <p>
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <p>
+     * <pre>
+     * getAttributeGroup().add(newItem);
+     * </pre>
+     * <p>
+     * <p>
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link AttributeGroup }
+     */
+    public List<AttributeGroup> getAttributeGroup() {
+        if (attributeGroup == null) {
+            attributeGroup = new ArrayList<AttributeGroup>();
+        }
+        return this.attributeGroup;
     }
-    return this.attributeGroup;
-  }
 
-  /**
-   * Gets the value of the description property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDescription() {
-    return description;
-  }
 
-  /**
-   * Sets the value of the description property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setDescription(String value) {
-    this.description = value;
-  }
+    /**
+     * Gets the value of the description property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getDescription() {
+        return description;
+    }
+
+
+    /**
+     * Sets the value of the description property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setDescription(String value) {
+        this.description = value;
+    }
 
 }

@@ -17,174 +17,166 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>
  * Java class for anonymous complex type.
- * 
+ * <p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
+ * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice minOccurs="0">
- *           &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}set-of-keyword"/>
- *           &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}set-of-enum"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attribute name="tag" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="tag-name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="value" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice minOccurs="0"&gt;
+ *           &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}set-of-keyword"/&gt;
+ *           &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}set-of-enum"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="tag" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="tag-name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="value" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "setOfKeyword", "setOfEnum" })
+@XmlType(name = "", propOrder = {"setOfKeyword", "setOfEnum"})
 @XmlRootElement(name = "attribute-value")
 public class AttributeValue {
 
-  @XmlElement(name = "set-of-keyword")
-  protected SetOfKeyword setOfKeyword;
-  @XmlElement(name = "set-of-enum")
-  protected SetOfEnum setOfEnum;
-  @XmlAttribute(required = true)
-  protected String tag;
-  @XmlAttribute(name = "tag-name", required = true)
-  protected String tagName;
-  @XmlAttribute
-  protected String value;
-  @XmlAttribute
-  protected String description;
+    @XmlElement(name = "set-of-keyword")
+    protected SetOfKeyword setOfKeyword;
+    @XmlElement(name = "set-of-enum")
+    protected SetOfEnum setOfEnum;
+    @XmlAttribute(required = true)
+    protected String tag;
+    @XmlAttribute(name = "tag-name", required = true)
+    protected String tagName;
+    @XmlAttribute
+    protected String value;
+    @XmlAttribute
+    protected String description;
 
-  /**
-   * Gets the value of the setOfKeyword property.
-   * 
-   * @return possible object is {@link SetOfKeyword }
-   * 
-   */
-  public SetOfKeyword getSetOfKeyword() {
-    return setOfKeyword;
-  }
 
-  /**
-   * Sets the value of the setOfKeyword property.
-   * 
-   * @param value
-   *          allowed object is {@link SetOfKeyword }
-   * 
-   */
-  public void setSetOfKeyword(SetOfKeyword value) {
-    this.setOfKeyword = value;
-  }
+    /**
+     * Gets the value of the setOfKeyword property.
+     *
+     * @return possible object is {@link SetOfKeyword }
+     */
+    public SetOfKeyword getSetOfKeyword() {
+        return setOfKeyword;
+    }
 
-  /**
-   * Gets the value of the setOfEnum property.
-   * 
-   * @return possible object is {@link SetOfEnum }
-   * 
-   */
-  public SetOfEnum getSetOfEnum() {
-    return setOfEnum;
-  }
 
-  /**
-   * Sets the value of the setOfEnum property.
-   * 
-   * @param value
-   *          allowed object is {@link SetOfEnum }
-   * 
-   */
-  public void setSetOfEnum(SetOfEnum value) {
-    this.setOfEnum = value;
-  }
+    /**
+     * Sets the value of the setOfKeyword property.
+     *
+     * @param value allowed object is {@link SetOfKeyword }
+     */
+    public void setSetOfKeyword(SetOfKeyword value) {
+        this.setOfKeyword = value;
+    }
 
-  /**
-   * Gets the value of the tag property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getTag() {
-    return tag;
-  }
 
-  /**
-   * Sets the value of the tag property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setTag(String value) {
-    this.tag = value;
-  }
+    /**
+     * Gets the value of the setOfEnum property.
+     *
+     * @return possible object is {@link SetOfEnum }
+     */
+    public SetOfEnum getSetOfEnum() {
+        return setOfEnum;
+    }
 
-  /**
-   * Gets the value of the tagName property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getTagName() {
-    return tagName;
-  }
 
-  /**
-   * Sets the value of the tagName property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setTagName(String value) {
-    this.tagName = value;
-  }
+    /**
+     * Sets the value of the setOfEnum property.
+     *
+     * @param value allowed object is {@link SetOfEnum }
+     */
+    public void setSetOfEnum(SetOfEnum value) {
+        this.setOfEnum = value;
+    }
 
-  /**
-   * Gets the value of the value property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getValue() {
-    return value;
-  }
 
-  /**
-   * Sets the value of the value property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setValue(String value) {
-    this.value = value;
-  }
+    /**
+     * Gets the value of the tag property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getTag() {
+        return tag;
+    }
 
-  /**
-   * Gets the value of the description property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDescription() {
-    return description;
-  }
 
-  /**
-   * Sets the value of the description property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setDescription(String value) {
-    this.description = value;
-  }
+    /**
+     * Sets the value of the tag property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setTag(String value) {
+        this.tag = value;
+    }
+
+
+    /**
+     * Gets the value of the tagName property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getTagName() {
+        return tagName;
+    }
+
+
+    /**
+     * Sets the value of the tagName property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setTagName(String value) {
+        this.tagName = value;
+    }
+
+
+    /**
+     * Gets the value of the value property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getValue() {
+        return value;
+    }
+
+
+    /**
+     * Sets the value of the value property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+
+    /**
+     * Gets the value of the description property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getDescription() {
+        return description;
+    }
+
+
+    /**
+     * Sets the value of the description property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setDescription(String value) {
+        this.description = value;
+    }
 
 }

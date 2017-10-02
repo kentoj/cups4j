@@ -19,84 +19,80 @@ import java.util.List;
 /**
  * <p>
  * Java class for anonymous complex type.
- * 
+ * <p>
  * <p>
  * The following schema fragment specifies the expected content contained within
  * this class.
- * 
+ * <p>
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}enum" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.vppserver.ethz.ch/schema/ippclient}enum" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="description" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "_enum" })
+@XmlType(name = "", propOrder = {"_enum"})
 @XmlRootElement(name = "set-of-enum")
 public class SetOfEnum {
 
-  @XmlElement(name = "enum")
-  protected List<Enum> _enum;
-  @XmlAttribute
-  protected String description;
+    @XmlElement(name = "enum")
+    protected List<Enum> _enum;
+    @XmlAttribute
+    protected String description;
 
-  /**
-   * Gets the value of the enum property.
-   * 
-   * <p>
-   * This accessor method returns a reference to the live list, not a snapshot.
-   * Therefore any modification you make to the returned list will be present
-   * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
-   * for the enum property.
-   * 
-   * <p>
-   * For example, to add a new item, do as follows:
-   * 
-   * <pre>
-   * getEnum().add(newItem);
-   * </pre>
-   * 
-   * 
-   * <p>
-   * Objects of the following type(s) are allowed in the list {@link Enum }
-   * 
-   * 
-   */
-  public List<Enum> getEnum() {
-    if (_enum == null) {
-      _enum = new ArrayList<Enum>();
+
+    /**
+     * Gets the value of the enum property.
+     * <p>
+     * <p>
+     * This accessor method returns a reference to the live list, not a snapshot.
+     * Therefore any modification you make to the returned list will be present
+     * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
+     * for the enum property.
+     * <p>
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <p>
+     * <pre>
+     * getEnum().add(newItem);
+     * </pre>
+     * <p>
+     * <p>
+     * <p>
+     * Objects of the following type(s) are allowed in the list {@link Enum }
+     */
+    public List<Enum> getEnum() {
+        if (_enum == null) {
+            _enum = new ArrayList<Enum>();
+        }
+        return this._enum;
     }
-    return this._enum;
-  }
 
-  /**
-   * Gets the value of the description property.
-   * 
-   * @return possible object is {@link String }
-   * 
-   */
-  public String getDescription() {
-    return description;
-  }
 
-  /**
-   * Sets the value of the description property.
-   * 
-   * @param value
-   *          allowed object is {@link String }
-   * 
-   */
-  public void setDescription(String value) {
-    this.description = value;
-  }
+    /**
+     * Gets the value of the description property.
+     *
+     * @return possible object is {@link String }
+     */
+    public String getDescription() {
+        return description;
+    }
+
+
+    /**
+     * Sets the value of the description property.
+     *
+     * @param value allowed object is {@link String }
+     */
+    public void setDescription(String value) {
+        this.description = value;
+    }
 
 }
